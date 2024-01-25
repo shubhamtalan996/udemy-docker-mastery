@@ -1,0 +1,8 @@
+> docker version
+> list basic client and server Info
+
+> docker info
+> list extensive infos about the plugins running containers resources and logs
+
+> docker
+> list out all the commands available, just a goto lookup
