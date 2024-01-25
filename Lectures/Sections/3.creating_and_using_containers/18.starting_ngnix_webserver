@@ -1,0 +1,15 @@
+Image Vs Container
+
+> An image is an application we want to run
+> A Container is an instance of that image running as a process
+> You can have many conatiners running off the same image
+> Here our image will be nginx webserver
+> Docker's default image "registry" is called Docker hub (hub.docker.com)
+
+
+> docker container run --publish 80:80 nginx
+
+    1. Downloaded image nginx from docker hub
+    2. Started a new conatiner from that image
+    3. Openend port 80 on the host IP
+    4. Routes that traffic to container IP, port 80
