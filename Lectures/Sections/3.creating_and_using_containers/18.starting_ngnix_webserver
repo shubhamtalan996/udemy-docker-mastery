@@ -13,3 +13,31 @@ Image Vs Container
     2. Started a new conatiner from that image
     3. Openend port 80 on the host IP
     4. Routes that traffic to container IP, port 80
+
+> crl + c to kill the container
+
+> docker container run --publish 80:80 --detach nginx (you will get an conatiner id)
+
+> docker container ls
+
+> docker container stop id...(add in id chars till it is unique)
+
+> docker container ls -a
+
+> docker container run --publish 80:80 --detach --name webhost nginx
+
+> docker container ls -a
+
+> docker container logs webhost
+
+> docker container top webhost (lists processes inside conatiner)
+
+> docker container ls -a
+
+> docker container rm 614 6e39 039e 7cb 4675
+
+Got error: cannot terminate running container (Now we are going to do it either stop then remove or forcefully remove it)
+
+> docker container ls -a
+
+> 

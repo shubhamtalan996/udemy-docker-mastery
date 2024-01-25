@@ -1,0 +1,12 @@
+What happens when we run docker conatiner run?
+
+    1. Looks for that image in image chache, doesn't find anything.
+    2. Then looks for it in remote image repository (docker hub).
+    3. Downloads the latest version (nginx:latest). Save it in image cache
+    4. Creates a container using that image.
+    5. Gives it a virtual ip on the private network inside docker engine.
+    6. Opens a port 80 on the host and forwards to port 80 in the container.
+    7. starts container by using the CMD in the image Dockerfile.
+
+
+    docker conatiner run --publish 8080:80 --name webhost -d nginx:1.11 nginx(change cmd on start) -T
