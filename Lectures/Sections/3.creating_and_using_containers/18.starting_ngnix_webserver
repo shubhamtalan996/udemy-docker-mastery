@@ -39,5 +39,3 @@ Image Vs Container
 Got error: cannot terminate running container (Now we are going to do it either stop then remove or forcefully remove it)
 
 > docker container ls -a
-
-> 
